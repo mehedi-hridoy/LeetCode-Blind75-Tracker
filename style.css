@@ -1,0 +1,140 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f0f7ff, #e6fff5);
+}
+
+/* Circular Progress Bar */
+.progress-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.progress-circle {
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.progress-circle-bg {
+    fill: none;
+    stroke: #e5e7eb;
+    stroke-width: 10;
+}
+.progress-circle-fill {
+    fill: none;
+    stroke: url(#progressGradient);
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.5s ease-in-out;
+}
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+/* Topic Card Styling */
+.topic-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.topic-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Toast Styling */
+#toast {
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer.bg-gray-900 {
+    background: linear-gradient(135deg, #1f2937, #374151);
+}
+.text-gray-400:hover {
+    color: #f472b6;
+}
+
+/* Login Page Styling */
+#loginScreen {
+    background: linear-gradient(135deg, #e0f2fe, #d1fae5);
+}
+.login-box {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+.login-box:hover {
+    transform: scale(1.02);
+}
+.login-box h2 {
+    color: #4f46e5;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.login-box input {
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0.75rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease;
+}
+.login-box input:focus {
+    border-color: #f472b6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(244, 114, 182, 0.5);
+}
+.login-box button {
+    background: linear-gradient(90deg, #4f46e5, #f472b6);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+.login-box button:hover {
+    background: linear-gradient(90deg, #3b82f6, #ec4899);
+}
+
+/* Modal Styling */
+#problemModal {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+#modalDone {
+    display: block !important; /* Ensure Done button is always visible */
+    background: linear-gradient(90deg, #4f46e5, #f472b6);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#modalDone:hover {
+    background: linear-gradient(90deg, #3b82f6, #ec4899);
+}
