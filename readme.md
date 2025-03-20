@@ -15,4 +15,4 @@ While this tracker is currently for my personal use, I plan to enhance it in the
 ## Live Demo
 
 You can view the live version of the tracker on GitHub Pages:  
-[LeetCode Blind 75 Tracker Live](https://mehedi-hridoy.github.io/LeetCode-Blind75-Tracker/)
+[LeetCode Blind 75 Tracker Live](https://blind75tracker.netlify.app/)
